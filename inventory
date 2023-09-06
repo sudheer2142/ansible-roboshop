@@ -1,17 +1,29 @@
 [mongodb]
-mongodb.sudheerdeveops.online
+mongodb.sudheerdevops.online
 
-[catalouge]
-catalouge.sudheerdeveops.online
+[catalogue]
+catalogue.sudheerdevops.online
+
+[web]
+web.sudheerdevops.online
+
+[redis]
+redis.sudheerdevops.online
+
+[user]
+user.sudheerdevops.online
+
+[cart]
+cart.sudheerdevops.online
+
+[mysql]
+mysql.sudheerdevops.online
 
 [shipping]
 shipping.sudheerdevops.online
 
-[cart]
-cart.sudheerdeveops.online
+[rabbitmq]
+rabbitmq.sudheerdevops.online
 
-[shippment]
-
-
-[web]
-web.sudheerdeveops.online
+[payment]
+payment.sudheerdevops.online

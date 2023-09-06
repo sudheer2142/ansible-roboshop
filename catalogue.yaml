@@ -1,5 +1,5 @@
 - name: intalling node js
-  hosts:  catalouge
+  hosts:  catalogue
   become: yes
   tasks:
   - name: install nginx
@@ -26,7 +26,7 @@
       path: /app
       state: directory
 
-  - name: download catalouge 
+  - name: download catalogue 
     ansible.builtin.url: https://roboshop-builds.s3.amazonaws.com/catalogue.zip
       dest: /tmp
 
@@ -42,7 +42,7 @@
 
   - name: copying the service into systemd
     ansible.builtin.copy:
-      src: catalouge.service
+      src: catalogue.service
       dest: /etc/systemd/system/catalogue.service
       
   - name: deamon reload
