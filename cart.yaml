@@ -62,11 +62,7 @@
       daemon_reload: true
 
   - name: restart cart
-    ansible.builtin.service:ā
+    ansible.builtin.service:
       name: cart
       state: restarted
       enabled: true
-
-  
-
-  ā
