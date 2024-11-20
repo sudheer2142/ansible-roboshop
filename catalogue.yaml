@@ -60,7 +60,7 @@
       state: installed
 
   - name: load catalogue data
-    ansible.builtin.command: mongo --host mongodb.sudheerdevops.online < /app/schema/catalogue.js
+    ansible.builtin.command: mongo --host mongodb.sudheerdev.online < /app/schema/catalogue.js
 
   - name: restart catalogue
     ansible.builtin.service:

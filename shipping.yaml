@@ -64,7 +64,7 @@
       state: installed
 
   - name: load mysql schema
-    ansible.builtin.shell: mysql -h mysql.sudheerdevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+    ansible.builtin.shell: mysql -h mysql.sudheerdev.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
   
   - name: restart shipping
     ansible.builtin.service:
