@@ -8,6 +8,7 @@
     ansible.builtin.yum:
       name: nodejs
       state: Installed
+
   - name: checking user roboshop
     ansible.builtin.command: id roboshop
     register: output
@@ -17,8 +18,9 @@
     name: create roboshop user
     ansible.builtin.user:
       name: roboshop
+
   - name: check app directory exits or not
-    ansible.builtin.stats:
+    ansible.builtin.stat:
       path: /app
       register: outcome
   - when: outcome.stat.exists == False
